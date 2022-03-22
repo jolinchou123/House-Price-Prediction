@@ -1,1 +1,5 @@
 # House-Price-Prediction
+
+In my implementation by using the Random Forest Algorithm, I chose several regions to make the results look more particular. For the accuracy of the prediction, I decided to apply the regression scoring parameter, which is "Root Mean Squared Logarithmic Error", as my evaluation standard. In Fig 12 , we can see that the actual prices were shown in blue dots and the predicted prices were shown in orange dots. Through the prediction without tuning, we got the result of RMSLE is approximately 0.021142.
+
+In order to understand the concept of a different number of decision trees might lead to different accuracy of prediction. I tuned the training data and set "n_estiamtors" to 200/500/800. After that, I printed the plots and analyzed the effects. Green dots were predicted prices after tuning while orange dots were the data we predicted before. Figures 13 and 14 below showed that the best prediction was when decision trees are equal to 200, RMSLE = 0.02010. However, the accuracy decreased when we created more trees.
